@@ -1,0 +1,111 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white"
+    tools:context="com.example.dylicious.mydoctors.StorePatientProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:text="Subject:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/app_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title of the Appointment"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:text="Description:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/app_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Desciption of the Appointment"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:text="Time:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:textStyle="italic"
+            android:hint="Time of the appointment"
+            android:id="@+id/app_time" />
+
+    <TextView
+        android:text="Date:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/app_date"
+            android:textStyle="italic"
+            android:hint="Date of the appointment"
+            android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:id="@+id/reminderOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me"
+        android:textSize="15sp"
+        android:checked="true"
+        android:fontFamily="sans-serif-medium"/>
+
+    <Button
+        android:id="@+id/saveapp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/cancelsave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+</ScrollView>
